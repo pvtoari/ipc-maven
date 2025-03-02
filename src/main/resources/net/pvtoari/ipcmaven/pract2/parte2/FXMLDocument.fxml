@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+
+<HBox minHeight="400.0" minWidth="560.0" onMousePressed="#handleSceneMousePressed" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.pvtoari.ipcmaven.pract2.parte2.FXMLDocumentController">
+   <GridPane fx:id="gridPane" gridLinesVisible="true" HBox.hgrow="ALWAYS">
+      <columnConstraints>
+         <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+      </rowConstraints>
+      <Circle fx:id="circle" fill="DODGERBLUE" focusTraversable="true" onKeyPressed="#handleCircleKeyPressed" radius="10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+   </GridPane>
+   <ToolBar orientation="VERTICAL" HBox.hgrow="ALWAYS">
+      <ToggleButton fx:id="toggleButton" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleToggleButtonOnAction" prefHeight="25.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="30" fitWidth="30" preserveRatio="true">
+               <Image url="@circulo.png" />
+            </ImageView>
+         </graphic>
+      </ToggleButton>
+      <Slider fx:id="slider" blockIncrement="1.0" focusTraversable="false" max="40.0" maxHeight="25.0" maxWidth="50.0" min="10.0" minHeight="25.0" minWidth="50.0" onMouseDragged="#handleSliderOnMouseDragged" prefHeight="25.0" prefWidth="50.0" />
+      <ColorPicker fx:id="colorPicker" focusTraversable="false" maxHeight="25.0" maxWidth="50.0" minHeight="25.0" minWidth="50.0" onAction="#handleColorPickerOnAction" prefHeight="25.0" prefWidth="50.0" />
+   </ToolBar>
+</HBox>
