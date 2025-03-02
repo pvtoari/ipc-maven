@@ -333,17 +333,17 @@ Por ejemplo, a día 2 de marzo de 2025, así es como yo personalmente he estruct
 El archivo `module-info.java` es una característica introducida en Java 9 como parte del sistema de módulos de Java. Este archivo define un módulo y especifica qué paquetes están disponibles para otros módulos y qué dependencias tiene el módulo. Aquí tienes un ejemplo básico:
 
 ```java
-module com.pvtoari.labsmaven {
+module com.pvtoari.ipcmaven {
   requires javafx.controls;
   requires javafx.fxml;
 
-  opens com.pvtoari.labsmaven to javafx.fxml;
-  exports com.pvtoari.labsmaven;
+  opens com.pvtoari.ipcmaven to javafx.fxml;
+  exports com.pvtoari.ipcmaven;
 }
 ```
 
 En este ejemplo:
-- `module com.pvtoari.labsmaven` define el nombre del módulo.
+- `module com.pvtoari.ipcmaven` define el nombre del módulo.
 - `requires` especifica las dependencias del módulo.
 - `opens` permite el acceso reflexivo a los paquetes especificados.
 - `exports` hace que los paquetes estén disponibles para otros módulos.
@@ -352,7 +352,7 @@ En este ejemplo:
 El archivo `package-info.java` se utiliza para proporcionar documentación a nivel de paquete y anotaciones. Este archivo no es obligatorio, pero es útil para agregar comentarios y anotaciones que se aplican a todo el paquete. Aquí tienes un ejemplo:
 
 ```java
-package com.pvtoari.labsmaven;
+package com.pvtoari.ipcmaven;
 ```
 
 En este proyecto se cuenta con un archivo `module-info.java` que **deberás modificar**, y un `package-info` que **NO debes modificar**. 
@@ -368,31 +368,31 @@ El título es más imponente de lo que parece, y este punto va a ser breve y sen
 Como se ha mencionado antes, este proyecto cuenta con un archivo `module-info.java`, que puede tener esta pinta:
 
 ```java
-module net.pvtoari.labsmaven {
+module net.pvtoari.ipcmaven {
     requires javafx.controls;
     requires javafx.fxml;
     requires exp4j;
 
     // Sample package
-    exports net.pvtoari.labsmaven.sample;
-    opens net.pvtoari.labsmaven.sample to javafx.fxml;
+    exports net.pvtoari.ipcmaven.sample;
+    opens net.pvtoari.ipcmaven.sample to javafx.fxml;
 
     // Pract1 packages
-    exports net.pvtoari.labsmaven.pract1.loginIPC;
-    opens net.pvtoari.labsmaven.pract1.loginIPC to javafx.fxml;
+    exports net.pvtoari.ipcmaven.pract1.loginIPC;
+    opens net.pvtoari.ipcmaven.pract1.loginIPC to javafx.fxml;
 
-    opens net.pvtoari.labsmaven.pract1.myFirstIpcProjectArielRoque;
-    exports net.pvtoari.labsmaven.pract1.myFirstIpcProjectArielRoque to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract1.myFirstIpcProjectArielRoque;
+    exports net.pvtoari.ipcmaven.pract1.myFirstIpcProjectArielRoque to javafx.fxml;
 
-    opens net.pvtoari.labsmaven.pract1.calculadoraIPC;
-    exports net.pvtoari.labsmaven.pract1.calculadoraIPC to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract1.calculadoraIPC;
+    exports net.pvtoari.ipcmaven.pract1.calculadoraIPC to javafx.fxml;
 
     // Pract2 packages
-    opens net.pvtoari.labsmaven.pract2.parte1;
-    exports net.pvtoari.labsmaven.pract2.parte1 to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract2.parte1;
+    exports net.pvtoari.ipcmaven.pract2.parte1 to javafx.fxml;
 
-    exports net.pvtoari.labsmaven.pract2.parte2 to javafx.fxml;
-    opens net.pvtoari.labsmaven.pract2.parte2;
+    exports net.pvtoari.ipcmaven.pract2.parte2 to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract2.parte2;
 
     //Pract3 packages
     ...

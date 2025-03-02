@@ -11,26 +11,8 @@
 module net.pvtoari.ipcmaven {
     requires javafx.controls;
     requires javafx.fxml;
-    requires exp4j;
 
     // Sample package
     exports net.pvtoari.ipcmaven.sample;
     opens net.pvtoari.ipcmaven.sample to javafx.fxml;
-
-    // Pract1 packages
-    exports net.pvtoari.ipcmaven.pract1.loginIPC;
-    opens net.pvtoari.ipcmaven.pract1.loginIPC to javafx.fxml;
-
-    opens net.pvtoari.ipcmaven.pract1.myFirstIpcProjectArielRoque;
-    exports net.pvtoari.ipcmaven.pract1.myFirstIpcProjectArielRoque to javafx.fxml;
-
-    opens net.pvtoari.ipcmaven.pract1.calculadoraIPC;
-    exports net.pvtoari.ipcmaven.pract1.calculadoraIPC to javafx.fxml;
-
-    // Pract2 packages
-    opens net.pvtoari.ipcmaven.pract2.parte1;
-    exports net.pvtoari.ipcmaven.pract2.parte1 to javafx.fxml;
-
-    exports net.pvtoari.ipcmaven.pract2.parte2 to javafx.fxml;
-    opens net.pvtoari.ipcmaven.pract2.parte2;
 }
