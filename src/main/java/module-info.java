@@ -12,6 +12,7 @@ module net.pvtoari.ipcmaven {
     requires javafx.controls;
     requires javafx.fxml;
     requires exp4j;
+    requires java.desktop;
 
     // Sample package
     exports net.pvtoari.ipcmaven.sample;
@@ -33,4 +34,7 @@ module net.pvtoari.ipcmaven {
 
     exports net.pvtoari.ipcmaven.pract2.parte2 to javafx.fxml;
     opens net.pvtoari.ipcmaven.pract2.parte2;
+
+    exports net.pvtoari.ipcmaven.pract4 to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract4;
 }
