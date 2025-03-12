@@ -16,7 +16,7 @@ public class JavaFXMLApplication extends Application {
 
         Scene scene = new Scene(root);
         stage.setTitle("no tengo enemigos");
-        stage.setResizable(true);
+        stage.setResizable(false);
         stage.setHeight(450);
         stage.setWidth(800);
         stage.show();

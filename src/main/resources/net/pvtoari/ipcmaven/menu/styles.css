@@ -1,0 +1,25 @@
+.root {
+    -fx-padding: 10;
+    -fx-spacing: 10;
+    -fx-alignment: center;
+    -fx-background-color: #f0f0f0;
+}
+
+.label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+.button {
+    -fx-font-size: 1em;
+    -fx-padding: 10 20;
+    -fx-background-color: #0078d7;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-max-width: 100%;
+}
+
+.button:hover {
+    -fx-background-color: #005a9e;
+}
