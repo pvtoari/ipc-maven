@@ -18,7 +18,7 @@ public class JavaFXMLApplication extends Application {
     public void start(Stage stage) throws Exception {
         //======================================================================
         // 1- creación del grafo de escena a partir del fichero FXML
-        FXMLLoader loader= new  FXMLLoader(getClass().getResource("../../../../../../../../../pract1/MyFirstIpcProject_ArielRoque/src/javafxmlapplication/FXMLDocument.fxml"));
+        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/net/pvtoari/ipcmaven/pract1/myFirstIpcProjectArielRoque/FXMLDocument.fxml"));
         Parent root = loader.load();
         //======================================================================
         // 2- creación de la escena con el nodo raiz del grafo de escena
