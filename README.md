@@ -1,0 +1,1 @@
+https://github.com/pvtoari/ipc-maven
