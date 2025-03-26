@@ -41,6 +41,25 @@ module net.pvtoari.ipcmaven {
     opens net.pvtoari.ipcmaven.pract2.parte2;
 
     // Pract4 packages
-    exports net.pvtoari.ipcmaven.pract4 to javafx.fxml;
-    opens net.pvtoari.ipcmaven.pract4;
+    exports net.pvtoari.ipcmaven.pract4.registerIPC to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract4.registerIPC;
+
+    // Pract5 packages
+    exports net.pvtoari.ipcmaven.pract5.exampleIPC.model to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.exampleIPC.model;
+
+    exports net.pvtoari.ipcmaven.pract5.exampleIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.exampleIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract5.exampleIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.exampleIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract5.modalsIPC.model to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.modalsIPC.model;
+
+    exports net.pvtoari.ipcmaven.pract5.modalsIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.modalsIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract5.modalsIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract5.modalsIPC.application;
 }
