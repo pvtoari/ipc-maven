@@ -1,4 +1,4 @@
-package net.pvtoari.ipcmaven.pract4;
+package net.pvtoari.ipcmaven.pract4.registerIPC;
 
 import javafx.beans.property.StringProperty;
 import javafx.scene.control.TextInputControl;

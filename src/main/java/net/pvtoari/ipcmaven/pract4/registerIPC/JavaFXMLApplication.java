@@ -1,4 +1,4 @@
-package net.pvtoari.ipcmaven.pract4;
+package net.pvtoari.ipcmaven.pract4.registerIPC;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +11,7 @@ public class JavaFXMLApplication extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/net/pvtoari/ipcmaven/pract4/FXMLDocument.fxml"));
+        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/net/pvtoari/ipcmaven/pract4/registerIPC/FXMLDocument.fxml"));
         Parent root = loader.load();
 
         Scene scene = new Scene(root);

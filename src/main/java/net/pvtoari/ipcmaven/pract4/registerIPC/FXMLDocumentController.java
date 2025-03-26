@@ -1,4 +1,4 @@
-package net.pvtoari.ipcmaven.pract4;
+package net.pvtoari.ipcmaven.pract4.registerIPC;
 
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
