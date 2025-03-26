@@ -43,11 +43,16 @@ public class Main extends Application {
         ScrollPane scrollPane = new ScrollPane(vBox);
         scrollPane.setFitToWidth(true);
 
-        Scene scene = new Scene(scrollPane, 350, 500);
+        Scene scene = new Scene(scrollPane);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/net/pvtoari/ipcmaven/menu/styles.css")).toExternalForm());
+
         stage.setTitle("menu tranquilisimo");
-        stage.setScene(scene);
+        stage.setResizable(false);
+        stage.setHeight(500);
+        stage.setWidth(350);
         stage.show();
+
+        stage.setScene(scene);
     }
 
     private static Button getClassButton(Class<?> app) {
