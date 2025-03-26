@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox minHeight="400.0" minWidth="560.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.pvtoari.ipcmaven.pract4.eightpuzzleIPC.FXMLDocumentController">
+   <HBox alignment="CENTER" prefHeight="50.0">
+      <children>
+         <Label fx:id="pasosLabel" text="Steps: 0" textAlignment="CENTER" />
+      </children>
+      <VBox.margin>
+         <Insets bottom="25.0" />
+      </VBox.margin>
+   </HBox>
+   <GridPane fx:id="gridPane" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+      <columnConstraints>
+         <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" percentWidth="33.33" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" prefWidth="100.0" />
+         <ColumnConstraints hgrow="ALWAYS" minWidth="-Infinity" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints minHeight="-Infinity" percentHeight="33.33" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="-Infinity" percentHeight="33.33" prefHeight="30.0" vgrow="ALWAYS" />
+         <RowConstraints minHeight="-Infinity" percentHeight="33.33" prefHeight="30.0" vgrow="ALWAYS" />
+      </rowConstraints>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="0" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="3" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="6" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="1" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="4" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="7" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="2" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="5" />
+         </children>
+      </StackPane>
+      <StackPane onMouseDragged="#handleStackPaneMouseDragged" onMousePressed="#handleStackPaneMousePressed" onMouseReleased="#handleStackPaneMouseReleased" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.vgrow="ALWAYS">
+         <children>
+            <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ccd8f3" height="30.0" stroke="RED" strokeType="INSIDE" strokeWidth="0.5" width="30.0" />
+            <Label text="8" />
+         </children>
+      </StackPane>
+   </GridPane>
+   <HBox alignment="CENTER" prefHeight="100.0">
+      <children>
+         <Button mnemonicParsing="false" text="Start" />
+      </children>
+      <padding>
+         <Insets top="25.0" />
+      </padding>
+   </HBox>
+</VBox>
