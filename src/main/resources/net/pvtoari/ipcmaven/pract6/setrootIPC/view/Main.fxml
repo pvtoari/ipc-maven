@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.pvtoari.ipcmaven.pract6.setrootIPC.controller.FXMLDocumentController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Main window" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Text>
+      <Button mnemonicParsing="false" onAction="#goToWindow1" text="Window1">
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#exitPressed" text="Exit" />
+   </children>
+</VBox>
