@@ -39,15 +39,11 @@ public class AppLoader {
         return group.toString();
     }
 
-    private int extractPractNumber(String packageName) {
+    private int extractPractNumber(String packageName) throws NumberFormatException {
         String[] parts = packageName.split("\\.");
         for (String part : parts) {
             if (part.startsWith("pract")) {
-                try {
-                    return Integer.parseInt(part.substring(5));
-                } catch (NumberFormatException e) {
-                    return Integer.MAX_VALUE;
-                }
+                return Integer.parseInt(part.substring(5));
             }
         }
 

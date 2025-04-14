@@ -99,12 +99,12 @@ public class FXMLDocumentController implements Initializable {
     @SuppressWarnings("unused")
     private <T> ChangeListener<Boolean> getFocusListener(Property<T> target, BooleanProperty valid, ChangeListener<T> listener, Runnable checker) {
         final ChangeListener<T> finalListener = listener;
-        return (_, _, newVal) -> {
+        return (a, b, newVal) -> {
             if (!newVal) {
                 checker.run();
                 if (!valid.get()) {
                     if (finalListener == null) {
-                        ChangeListener<T> newListener = (_, _, newValue) -> checker.run();
+                        ChangeListener<T> newListener = (o0, o1, newValue) -> checker.run();
                         target.addListener(newListener);
                     }
                 }
