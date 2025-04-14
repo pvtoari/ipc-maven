@@ -14,6 +14,7 @@ module net.pvtoari.ipcmaven {
     requires exp4j;
     requires java.desktop;
     requires org.reflections;
+    requires java.logging;
 
     // Menu package
     exports net.pvtoari.ipcmaven.menu;
@@ -62,4 +63,23 @@ module net.pvtoari.ipcmaven {
 
     exports net.pvtoari.ipcmaven.pract5.modalsIPC.application to javafx.fxml;
     opens net.pvtoari.ipcmaven.pract5.modalsIPC.application;
+
+    // Pract6 packages
+    exports net.pvtoari.ipcmaven.pract6.setrootIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.setrootIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract6.setrootIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.setrootIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract6.setrootIPC.model to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.setrootIPC.model;
+
+    exports net.pvtoari.ipcmaven.pract6.tableviewIPC.model to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.tableviewIPC.model;
+
+    exports net.pvtoari.ipcmaven.pract6.tableviewIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.tableviewIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract6.tableviewIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract6.tableviewIPC.application;
 }
