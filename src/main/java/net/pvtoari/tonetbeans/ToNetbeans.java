@@ -45,14 +45,4 @@ public class ToNetbeans {
         ProjectBuilder projectBuilder = new ProjectBuilder(outputPath, javafxPath, params);
         projectBuilder.build();
     }
-
-    private static String askFor(String message) {
-        String res;
-
-        System.out.print(message);
-
-        res = sc.nextLine();
-
-        return res;
-    }
 }

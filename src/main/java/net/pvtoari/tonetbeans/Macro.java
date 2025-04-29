@@ -20,6 +20,7 @@ public class Macro {
     }
 
     public String getMacroValue() {
+        if (macroValue == null) return macroTarget.value();
         return macroValue;
     }
 

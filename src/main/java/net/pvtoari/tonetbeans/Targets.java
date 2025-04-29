@@ -9,7 +9,8 @@ public enum Targets {
     CAMEL_CASE_PROJECT_NAME_TARGET("%tonetbeans.CAMEL_CASE_PROJECT_NAME%"),
     APP_VENDOR_TARGET("%tonetbeans.APP_VENDOR%"),
     MAIN_CLASS_NAME_TARGET("%tonetbeans.MAIN_CLASS_NAME%"),
-    MAIN_CLASS_FULL_NAME_TARGET("%tonetbeans.MAIN_CLASS_FULL_NAME%");
+    MAIN_CLASS_FULL_NAME_TARGET("%tonetbeans.MAIN_CLASS_FULL_NAME%"),
+    RESOURCE_ACCESS_FIX_TARGET("/net/pvtoari/"); // "/net/pvtoari" -> "/resources/net/pvtoari"
 
     private final String value;
 
