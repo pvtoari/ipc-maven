@@ -11,6 +11,7 @@
 module net.pvtoari.ipcmaven {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
     requires exp4j;
     requires java.desktop;
     requires org.reflections;
@@ -82,4 +83,17 @@ module net.pvtoari.ipcmaven {
 
     exports net.pvtoari.ipcmaven.pract6.tableviewIPC.application to javafx.fxml;
     opens net.pvtoari.ipcmaven.pract6.tableviewIPC.application;
+
+    // Pract7 packages
+    exports net.pvtoari.ipcmaven.pract7.menudialogstoolbarsIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract7.menudialogstoolbarsIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract7.menudialogstoolbarsIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract7.menudialogstoolbarsIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract7.internationalizationIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract7.internationalizationIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract7.internationalizationIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract7.internationalizationIPC.controller;
 }
