@@ -45,7 +45,7 @@ public class PersonViewController implements Initializable {
                 new Image(getClass().getResourceAsStream("/net/pvtoari/ipcmaven/pract6/tableviewIPC/images/Sonriente.png"))
         );
 
-        imagesCombo.setCellFactory(_ -> new ImageComboBoxCell());
+        imagesCombo.setCellFactory(a -> new ImageComboBoxCell());
         imagesCombo.setButtonCell(new ImageComboBoxCell());
 
         imagesCombo.setItems(imagesList);

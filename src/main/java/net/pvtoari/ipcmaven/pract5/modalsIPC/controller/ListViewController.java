@@ -31,7 +31,7 @@ public class ListViewController implements Initializable {
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
-        peopleListView.setCellFactory(_ -> new PersonListCell());
+        peopleListView.setCellFactory(a -> new PersonListCell());
         data = peopleListView.getItems();
 
         data.add(new Person("Pepe", "García"));

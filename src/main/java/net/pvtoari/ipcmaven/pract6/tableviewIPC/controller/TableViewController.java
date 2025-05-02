@@ -24,7 +24,7 @@ import javafx.stage.Stage;
 import net.pvtoari.ipcmaven.pract6.tableviewIPC.model.Person;
 
 public class TableViewController implements Initializable {
-    private ObservableList<?> datos = null;
+    private final ObservableList<?> datos = null;
 
     @FXML
     private Button addButton, modifyButton, deleteButton;
@@ -49,7 +49,7 @@ public class TableViewController implements Initializable {
 
         nameColumn.setCellValueFactory((rowPerson) -> rowPerson.getValue().nameProperty());
         surnameColumn.setCellValueFactory((rowPerson) -> rowPerson.getValue().surnameProperty());
-        imageColumn.setCellFactory(_-> new ImageTabCell());
+        imageColumn.setCellFactory(a -> new ImageTabCell());
         imageColumn.setCellValueFactory(rowPerson -> new SimpleStringProperty(rowPerson.getValue().getImagePath()));
 
         deleteButton.disableProperty().bind(Bindings.equal(peopleTableView.getSelectionModel().selectedIndexProperty(), -1));

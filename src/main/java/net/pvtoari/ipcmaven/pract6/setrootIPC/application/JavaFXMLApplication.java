@@ -16,7 +16,7 @@ import java.util.HashMap;
 
 public class JavaFXMLApplication extends Application {
     private static Scene scene;
-    private static HashMap<String, Parent> roots = new HashMap<>();
+    private static final HashMap<String, Parent> roots = new HashMap<>();
 
     public static void setRoot(Parent root) {
         scene.setRoot(root);
