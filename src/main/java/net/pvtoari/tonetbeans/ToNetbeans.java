@@ -4,11 +4,8 @@ import javax.swing.*;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Path;
-import java.util.Scanner;
 
 public class ToNetbeans {
-    public static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) throws IOException, URISyntaxException {
         String packageToPack = JOptionPane.showInputDialog("Enter the package to pack (e.g. net.pvtoari.tonetbeans): ");
         String outputProjectName = JOptionPane.showInputDialog("Enter the output project name (any case or none): ");
