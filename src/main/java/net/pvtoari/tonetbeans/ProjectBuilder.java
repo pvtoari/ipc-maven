@@ -68,6 +68,19 @@ public class ProjectBuilder {
     }
 
     private List<Macro> initializeMacros() {
+        String fix = """
+                                <copy todir="${build.classes.dir}">
+                                        <fileset dir="src/resources/net/pvtoari/ipcmaven/pract7/internationalizationIPC">
+                                            <include name="**/*.properties"/>
+                                            <include name="**/*.fxml"/>
+                                            <include name="**/*.png"/>
+                                        </fileset>
+                                        <mapper from="*" to="net/pvtoari/ipcmaven/pract7/internationalizationIPC/*" type="glob"/>
+                                    </copy>
+                      """;
+
+        fix = params.getPackageToPack().equals("net.pvtoari.ipcmaven.pract7.internationalizationIPC") ? fix : "";
+
         return List.of(
                 Macro.ofTarget(Targets.JAVAFX_LIBS_TARGET).define("libs"),
                 Macro.ofTarget(Targets.EXPORTS_OPENS_TARGET).define(TO_DEFINE),
@@ -79,18 +92,7 @@ public class ProjectBuilder {
                 Macro.ofTarget(Targets.MAIN_CLASS_NAME_TARGET).define(params.getMainClassName()), // TODO
                 Macro.ofTarget(Targets.MAIN_CLASS_FULL_NAME_TARGET).define(TO_DEFINE), // TODO
                 Macro.ofTarget(Targets.RESOURCE_ACCESS_FIX_TARGET).define("/resources/net/pvtoari/"),
-                Macro.ofTarget(Targets.PRACT7_ACCESS_FIX_TARGET).define(
-                        """
-                                <copy todir="${build.classes.dir}">
-                                        <fileset dir="src/resources/net/pvtoari/ipcmaven/pract7/internationalizationIPC">
-                                            <include name="**/*.properties"/>
-                                            <include name="**/*.fxml"/>
-                                            <include name="**/*.png"/>
-                                        </fileset>
-                                        <mapper from="*" to="net/pvtoari/ipcmaven/pract7/internationalizationIPC/*" type="glob"/>
-                                    </copy>
-                              """
-                        )
+                Macro.ofTarget(Targets.PRACT7_ACCESS_FIX_TARGET).define(fix)
         );
     }
 
