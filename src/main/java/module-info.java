@@ -96,4 +96,17 @@ module net.pvtoari.ipcmaven {
 
     exports net.pvtoari.ipcmaven.pract7.internationalizationIPC.controller to javafx.fxml;
     opens net.pvtoari.ipcmaven.pract7.internationalizationIPC.controller;
+
+    // Pract8 packages
+    exports net.pvtoari.ipcmaven.pract8.calculatorIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract8.calculatorIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract8.calculatorIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract8.calculatorIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract8.exampleIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract8.exampleIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract8.exampleIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract8.exampleIPC.controller;
 }
