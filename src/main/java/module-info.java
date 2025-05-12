@@ -109,4 +109,17 @@ module net.pvtoari.ipcmaven {
 
     exports net.pvtoari.ipcmaven.pract8.exampleIPC.controller to javafx.fxml;
     opens net.pvtoari.ipcmaven.pract8.exampleIPC.controller;
+
+    // Pract9 packages
+    exports net.pvtoari.ipcmaven.pract9.factorialIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract9.factorialIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract9.factorialIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract9.factorialIPC.controller;
+
+    exports net.pvtoari.ipcmaven.pract9.relojIPC.application to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract9.relojIPC.application;
+
+    exports net.pvtoari.ipcmaven.pract9.relojIPC.controller to javafx.fxml;
+    opens net.pvtoari.ipcmaven.pract9.relojIPC.controller;
 }
